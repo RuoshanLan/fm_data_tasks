@@ -74,3 +74,14 @@ python3 -m fm_data_tasks.run_inference \
     --sample_method manual \
     --data_dir data/datasets/data_imputation/Restaurant
 ```
+To run the code with gpt-3.5-tubo, add -- client_name openaichat to the command, e.g.
+```
+poetry run python3 -m fm_data_tasks.run_inference \
+    --client_name openaichat \
+    --num_run 20 \
+    --k 10 \
+    --sample_method random \
+    --num_trials 3 \
+    --data_dir data/datasets/data_imputation/Buy \
+    --max_tokens 10 --do_test \
+```

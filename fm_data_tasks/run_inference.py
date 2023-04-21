@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
         type=str,
         help="Manifest client type.",
         default="openai",
-        choices=["openai", "opt", "huggingface"],
+        choices=["openai", "openaichat", "opt", "huggingface"],
     )
     parser.add_argument(
         "--client_connection",
@@ -177,7 +177,7 @@ def main():
     logger.info(f"Running {num_run} examples for {args.num_trials} trials.")
 
     # Setup manifest
-    manifest = Manifest(
+    manifest_instance = Manifest.Manifest(
         cache_name=args.cache_name,
         cache_connection=args.cache_connection,
         client_name=args.client_name,
@@ -226,7 +226,7 @@ def main():
         for _ in range(min(num_run, args.num_print)):
             logger.info(prompt(queries[idx]))
             if not args.dry_run:
-                pred = manifest.run(
+                pred = manifest_instance.run(
                     prompt(queries[idx]), overwrite_cache=args.overwrite_cache
                 )
             else:
@@ -239,7 +239,7 @@ def main():
         if not args.dry_run:
             for query in queries[idx:num_run]:
                 preds.append(
-                    manifest.run(
+                    manifest_instance.run(
                         prompt(query),
                         overwrite_cache=args.overwrite_cache,
                     )
