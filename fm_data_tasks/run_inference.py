@@ -225,7 +225,7 @@ def main():
         preds = []
         idx = 0
         for _ in range(min(num_run, args.num_print)):
-            logger.info(prompt(queries[idx]))
+            # logger.info(prompt(queries[idx]))
             if not args.dry_run:
                 if count_idx and (count_idx % 3 == 0): # Sleep after every three runs
                     sleep(60)
@@ -236,7 +236,7 @@ def main():
             else:
                 pred = ""
             preds.append(pred)
-            logger.info(f"====> {pred} <====")
+            # logger.info(f"====> {pred} <====")
             idx += 1
         # Send to model for predictions
         if not args.dry_run:
