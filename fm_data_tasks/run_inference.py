@@ -224,27 +224,27 @@ def main():
         idx = 0
         # Run a few for printing -- they are cached
         for _ in range(min(num_run, args.num_print)):
-            #logger.info(prompt(queries[idx]))
             if not args.dry_run:
-                logger.info(f"idx = {idx}")
                 pred = manifest_instance.run(
                     prompt(queries[idx]), overwrite_cache=args.overwrite_cache
                 )
             else:
                 pred = ""
             preds.append(pred)
-            logger.info(f"====> {pred} <====")
+            # logger.info(f"====> {pred} <====")
             idx += 1
 
         # Send to model for predictions
         if not args.dry_run:
             for query in queries[idx:num_run]:
+                logger.info(f"idx is {idx}")
                 preds.append(
                     manifest_instance.run(
                         prompt(query),
                         overwrite_cache=args.overwrite_cache,
                     )
                 )
+                idx += 1
         else:
             preds.extend([""] * (num_run - idx))
 
