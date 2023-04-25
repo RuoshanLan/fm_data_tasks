@@ -1,0 +1,1488 @@
+2023-04-24 14:29:44,638 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 14:29:44,648 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 14:32:39,308 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 14:32:39,317 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 14:32:39,507 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 14:32:39,509 [run_inference] [INFO] Train shape is 469
+2023-04-24 14:32:39,512 [run_inference] [INFO] Test shape is 65
+2023-04-24 14:32:39,514 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 14:32:39,645 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Onkyo TX-NR906 A/V Receiver - TXNR906B. description: THX Ultra 2, Dolby Digital Plus, Dolby TrueHD, DTS-HD, Neural SurroundFM, AM. Who is the manufacturer?
+2023-04-24 14:32:40,537 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 14:32:40,540 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Speck Products ToughSkin for iPod classic - IC-BLK-TS. description: Rubber - Black. Who is the manufacturer?
+2023-04-24 14:32:41,482 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 14:32:41,484 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Canon EOS 40D Digital SLR Camera - 1901B004. description: Canon EOS 40D 10 Megapixel Digital SLR Camera - Body Only. Who is the manufacturer?
+2023-04-24 14:32:42,103 [run_inference] [INFO] ====> Canon <====
+2023-04-24 14:32:42,106 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Pioneer DEHP500UB Car Audio Player. description: CD-RW - CD-Text, MP3, WMA, WAV, AAC - 4 - 200W - FM, AM. Who is the manufacturer?
+2023-04-24 14:32:42,399 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 14:42:17,743 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 14:42:17,750 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 14:42:17,896 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 14:42:17,898 [run_inference] [INFO] Train shape is 469
+2023-04-24 14:42:17,900 [run_inference] [INFO] Test shape is 65
+2023-04-24 14:42:17,902 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 14:42:18,003 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Onkyo TX-NR906 A/V Receiver - TXNR906B. description: THX Ultra 2, Dolby Digital Plus, Dolby TrueHD, DTS-HD, Neural SurroundFM, AM. Who is the manufacturer?
+2023-04-24 14:42:18,055 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 14:42:18,058 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Speck Products ToughSkin for iPod classic - IC-BLK-TS. description: Rubber - Black. Who is the manufacturer?
+2023-04-24 14:42:18,114 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 14:42:18,117 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Canon EOS 40D Digital SLR Camera - 1901B004. description: Canon EOS 40D 10 Megapixel Digital SLR Camera - Body Only. Who is the manufacturer?
+2023-04-24 14:42:18,173 [run_inference] [INFO] ====> Canon <====
+2023-04-24 14:42:18,176 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Pioneer DEHP500UB Car Audio Player. description: CD-RW - CD-Text, MP3, WMA, WAV, AAC - 4 - 200W - FM, AM. Who is the manufacturer?
+2023-04-24 14:42:18,901 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 14:42:18,904 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Peerless Universal Flat Wall Mount - SF640P. description: Peerless Flat Wall Mount for 23'- 46' LCD Screens - Black. Who is the manufacturer?
+2023-04-24 14:42:19,579 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 14:42:19,581 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Samsung 4 Series LN32A450 32' LCD TV. description: Samsung LN32A450 - 32' Widescreen 720p LCD HDTV - 10000:1 Dynamic Contrast Ratio - 6ms Response Time - Piano Black. Who is the manufacturer?
+2023-04-24 14:42:20,661 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 14:42:20,664 [run_inference] [INFO] name: Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K. description: 14.2 Megapixel - 3.9x Optical Zoom - 2.7' Active Matrix TFT Color LCD. Who is the manufacturer? Sony
+
+name: Mitsubishi Diamond WD-73835 73' Projection TV - WD73835. description: 73' - DLP. Who is the manufacturer? Mitsubishi
+
+name: Nikon D60 Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 25438. description: Nikon D60 10 Megapixel Digital SLR Camera with AF-S DX Nikkor 18-55mm f/3.5-5.6G VR Lens - 3x Optical Zoom - 2.5' Active Matrix TFT Color LCD. Who is the manufacturer? Nikon
+
+name: Sony DVP-FX820/P Portable DVD Player - DVPFX820/P. description: 8' LCD - DVD+RW, DVD-RW, DVD+R, DVD-R, CD-RW - DVD Video, CD-DA, MP3, JPEG Playback - 1 Disc(s) - Pink. Who is the manufacturer? Sony
+
+name: Denon AVR-4308CI A/V Receiver - AVR4308CI. description: Dolby Pro Logic IIx, Dolby Digital Surround, DTS-ES, DTS Neo:6, DTS 96/24, Neural SurroundFM, AM, XM. Who is the manufacturer? Denon
+
+name: Canon PIXMA MX700 Multifunction Photo Printer - 2186B002. description: Canon Pixma MX700 Office All-in-One Printer. Who is the manufacturer? Canon
+
+name: Sony HESV1000 Blu-ray Player/Recorder. description: DVD+RW, DVD-RW, BD-RE, CD-RW, xD-Picture Card, CompactFlash (CF), Secure Digital (SD), Mini Secure Digital (miniSD), Memory Stick, Memory Stick Duo, Memory Stick PRO - BD Video, DVD Video, JPEG, MP3, CD-DA, MPE. Who is the manufacturer? Sony
+
+name: Samsung LN32A550 32' LCD TV. description: Samsung LN32A550 - 32' Widescreen 1080p LCD HDTV - 15,000:1 Dynamic Contrast Ratio - 5ms Response Time - Piano Black. Who is the manufacturer? Samsung
+
+name: Pioneer Nautica TS-MR1640 Marine Speaker - TS-MR1640. description: Pioneer Electronics TSMR1640 Nautica Series 6-1/2' Marine-Use 2-Way Speaker with 160 Watts Max. Power. Who is the manufacturer? Pioneer
+
+name: Sony Handycam HDR-SR11 High Definition Digital Camcorder - HDRSR11. description: 16:9 - 3.2' Color LCD. Who is the manufacturer? Sony
+
+name: Canon PIXMA MX310 Multifunction Photo Printer - 2184B002. description: Canon PIXMA MX310 Office All-in-One Printer, Scanner, Copier and Fax with High-Speed Auto Document Feeder. Who is the manufacturer?
+2023-04-24 14:42:21,006 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 14:46:40,199 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 14:46:40,209 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 14:46:40,403 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 14:46:40,405 [run_inference] [INFO] Train shape is 469
+2023-04-24 14:46:40,408 [run_inference] [INFO] Test shape is 65
+2023-04-24 14:46:40,410 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 14:46:40,499 [run_inference] [INFO] idx = 0
+2023-04-24 14:46:40,530 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 14:46:40,532 [run_inference] [INFO] idx = 1
+2023-04-24 14:46:40,568 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 14:46:40,571 [run_inference] [INFO] idx = 2
+2023-04-24 14:46:40,611 [run_inference] [INFO] ====> Canon <====
+2023-04-24 14:46:40,614 [run_inference] [INFO] idx = 3
+2023-04-24 14:46:40,650 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 14:46:40,652 [run_inference] [INFO] idx = 4
+2023-04-24 14:46:40,683 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 14:46:40,686 [run_inference] [INFO] idx = 5
+2023-04-24 14:46:40,715 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 14:46:40,718 [run_inference] [INFO] idx = 6
+2023-04-24 14:46:40,744 [client] [INFO] execute request
+2023-04-24 14:46:41,339 [run_inference] [INFO] ====> Canon <====
+2023-04-24 14:46:41,342 [run_inference] [INFO] idx = 7
+2023-04-24 14:46:41,385 [client] [INFO] execute request
+2023-04-24 14:46:42,336 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 14:46:42,339 [run_inference] [INFO] idx = 8
+2023-04-24 14:46:42,389 [client] [INFO] execute request
+2023-04-24 14:46:43,191 [run_inference] [INFO] ====> Canon <====
+2023-04-24 14:46:43,194 [run_inference] [INFO] idx = 9
+2023-04-24 14:46:43,234 [client] [INFO] execute request
+2023-04-24 14:46:43,498 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 21:49:36,360 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 21:49:36,367 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 21:49:36,531 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 21:49:36,534 [run_inference] [INFO] Train shape is 469
+2023-04-24 21:49:36,535 [run_inference] [INFO] Test shape is 65
+2023-04-24 21:49:36,537 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 21:49:36,679 [run_inference] [INFO] idx = 0
+2023-04-24 21:49:36,713 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 21:49:36,717 [run_inference] [INFO] idx = 1
+2023-04-24 21:49:36,759 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 21:49:36,762 [run_inference] [INFO] idx = 2
+2023-04-24 21:49:36,806 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:49:36,809 [run_inference] [INFO] idx = 3
+2023-04-24 21:49:36,849 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 21:49:36,852 [run_inference] [INFO] idx = 4
+2023-04-24 21:49:36,894 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 21:49:36,897 [run_inference] [INFO] idx = 5
+2023-04-24 21:49:36,933 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 21:49:36,936 [run_inference] [INFO] idx = 6
+2023-04-24 21:49:36,971 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:49:36,973 [run_inference] [INFO] idx = 7
+2023-04-24 21:49:37,000 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 21:49:37,002 [run_inference] [INFO] idx = 8
+2023-04-24 21:49:37,058 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:49:37,062 [run_inference] [INFO] idx = 9
+2023-04-24 21:49:37,104 [client] [INFO] execute request
+2023-04-24 21:49:37,399 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 21:49:37,405 [client] [INFO] ?????????????
+2023-04-24 21:49:37,407 [client] [INFO] !!!!!!!!!!!
+2023-04-24 21:49:37,409 [client] [INFO] ZZZZZZZZZZ
+2023-04-24 21:52:37,153 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 21:52:37,160 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 21:52:37,299 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 21:52:37,302 [run_inference] [INFO] Train shape is 469
+2023-04-24 21:52:37,305 [run_inference] [INFO] Test shape is 65
+2023-04-24 21:52:37,306 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 21:52:37,401 [run_inference] [INFO] idx = 0
+2023-04-24 21:52:37,431 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 21:52:37,434 [run_inference] [INFO] idx = 1
+2023-04-24 21:52:37,464 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 21:52:37,466 [run_inference] [INFO] idx = 2
+2023-04-24 21:52:37,495 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:52:37,497 [run_inference] [INFO] idx = 3
+2023-04-24 21:52:37,528 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 21:52:37,530 [run_inference] [INFO] idx = 4
+2023-04-24 21:52:37,557 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 21:52:37,559 [run_inference] [INFO] idx = 5
+2023-04-24 21:52:37,587 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 21:52:37,589 [run_inference] [INFO] idx = 6
+2023-04-24 21:52:37,625 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:52:37,627 [run_inference] [INFO] idx = 7
+2023-04-24 21:52:37,675 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 21:52:37,678 [run_inference] [INFO] idx = 8
+2023-04-24 21:52:37,726 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:52:37,729 [run_inference] [INFO] idx = 9
+2023-04-24 21:52:37,765 [client] [INFO] execute request
+2023-04-24 21:52:39,286 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 21:52:39,289 [client] [INFO] ?????????????
+2023-04-24 21:52:39,291 [client] [INFO] !!!!!!!!!!!
+2023-04-24 21:52:39,297 [client] [INFO] ZZZZZZZZZZ
+2023-04-24 21:57:08,401 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 21:57:08,409 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 21:57:08,568 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 21:57:08,570 [run_inference] [INFO] Train shape is 469
+2023-04-24 21:57:08,572 [run_inference] [INFO] Test shape is 65
+2023-04-24 21:57:08,574 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 21:57:08,669 [run_inference] [INFO] idx = 0
+2023-04-24 21:57:08,700 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 21:57:08,703 [run_inference] [INFO] idx = 1
+2023-04-24 21:57:08,731 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 21:57:08,733 [run_inference] [INFO] idx = 2
+2023-04-24 21:57:08,769 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:57:08,773 [run_inference] [INFO] idx = 3
+2023-04-24 21:57:08,809 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 21:57:08,812 [run_inference] [INFO] idx = 4
+2023-04-24 21:57:08,846 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 21:57:08,848 [run_inference] [INFO] idx = 5
+2023-04-24 21:57:08,882 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 21:57:08,885 [run_inference] [INFO] idx = 6
+2023-04-24 21:57:08,922 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:57:08,925 [run_inference] [INFO] idx = 7
+2023-04-24 21:57:08,960 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 21:57:08,963 [run_inference] [INFO] idx = 8
+2023-04-24 21:57:08,998 [run_inference] [INFO] ====> Canon <====
+2023-04-24 21:57:09,000 [run_inference] [INFO] idx = 9
+2023-04-24 21:57:09,031 [client] [INFO] execute request
+2023-04-24 21:57:09,296 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 21:57:09,299 [client] [INFO] ?????????????
+2023-04-24 21:57:09,302 [client] [INFO] !!!!!!!!!!!
+2023-04-24 21:57:09,307 [client] [INFO] exception response is None
+2023-04-24 22:02:25,118 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:02:25,131 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:02:25,286 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:02:25,288 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:02:25,290 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:02:25,292 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 22:02:25,396 [run_inference] [INFO] idx = 0
+2023-04-24 22:02:25,427 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:02:25,430 [run_inference] [INFO] idx = 1
+2023-04-24 22:02:25,461 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:02:25,463 [run_inference] [INFO] idx = 2
+2023-04-24 22:02:25,494 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:02:25,496 [run_inference] [INFO] idx = 3
+2023-04-24 22:02:25,527 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:02:25,529 [run_inference] [INFO] idx = 4
+2023-04-24 22:02:25,559 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:02:25,561 [run_inference] [INFO] idx = 5
+2023-04-24 22:02:25,593 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:02:25,595 [run_inference] [INFO] idx = 6
+2023-04-24 22:02:25,628 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:02:25,630 [run_inference] [INFO] idx = 7
+2023-04-24 22:02:25,663 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:02:25,665 [run_inference] [INFO] idx = 8
+2023-04-24 22:02:25,696 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:02:25,698 [run_inference] [INFO] idx = 9
+2023-04-24 22:02:25,731 [client] [INFO] execute request
+2023-04-24 22:02:26,006 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:02:26,010 [client] [INFO] ?????????????
+2023-04-24 22:02:26,013 [client] [INFO] !!!!!!!!!!!
+2023-04-24 22:02:26,015 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:02:26,019 [client] [INFO] exception response is None
+2023-04-24 22:06:36,751 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:06:36,758 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:06:36,881 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:06:36,883 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:06:36,885 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:06:36,886 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 22:06:36,973 [run_inference] [INFO] idx = 0
+2023-04-24 22:06:37,014 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:06:37,017 [run_inference] [INFO] idx = 1
+2023-04-24 22:06:37,056 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:06:37,058 [run_inference] [INFO] idx = 2
+2023-04-24 22:06:37,096 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:06:37,099 [run_inference] [INFO] idx = 3
+2023-04-24 22:06:37,168 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:06:37,171 [run_inference] [INFO] idx = 4
+2023-04-24 22:06:37,221 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:06:37,223 [run_inference] [INFO] idx = 5
+2023-04-24 22:06:37,269 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:06:37,272 [run_inference] [INFO] idx = 6
+2023-04-24 22:06:37,312 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:06:37,314 [run_inference] [INFO] idx = 7
+2023-04-24 22:06:37,356 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:06:37,358 [run_inference] [INFO] idx = 8
+2023-04-24 22:06:37,399 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:06:37,402 [run_inference] [INFO] idx = 9
+2023-04-24 22:06:37,434 [client] [INFO] execute request
+2023-04-24 22:06:37,702 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:06:37,705 [client] [INFO] ?????????????
+2023-04-24 22:06:37,708 [client] [INFO] !!!!!!!!!!!
+2023-04-24 22:06:37,710 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:06:37,712 [client] [INFO] exception is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:13:20,419 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:13:20,426 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:13:20,606 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:13:20,608 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:13:20,610 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:13:20,612 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 22:13:20,734 [run_inference] [INFO] idx = 0
+2023-04-24 22:13:20,786 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:13:20,789 [run_inference] [INFO] idx = 1
+2023-04-24 22:13:20,831 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:13:20,833 [run_inference] [INFO] idx = 2
+2023-04-24 22:13:20,871 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:13:20,874 [run_inference] [INFO] idx = 3
+2023-04-24 22:13:20,929 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:13:20,931 [run_inference] [INFO] idx = 4
+2023-04-24 22:13:20,976 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:13:20,979 [run_inference] [INFO] idx = 5
+2023-04-24 22:13:21,022 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:13:21,025 [run_inference] [INFO] idx = 6
+2023-04-24 22:13:21,059 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:13:21,061 [run_inference] [INFO] idx = 7
+2023-04-24 22:13:21,097 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:13:21,100 [run_inference] [INFO] idx = 8
+2023-04-24 22:13:21,139 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:13:21,141 [run_inference] [INFO] idx = 9
+2023-04-24 22:13:21,181 [client] [INFO] execute request
+2023-04-24 22:13:21,458 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:13:21,462 [client] [INFO] ?????????????
+2023-04-24 22:13:21,465 [client] [INFO] !!!!!!!!!!!
+2023-04-24 22:13:21,467 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:13:21,470 [client] [INFO] exception args is ({'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}},)
+2023-04-24 22:18:41,216 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:18:41,222 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:18:41,432 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:18:41,436 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:18:41,440 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:18:41,443 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 22:18:41,588 [run_inference] [INFO] idx = 0
+2023-04-24 22:18:41,635 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:18:41,639 [run_inference] [INFO] idx = 1
+2023-04-24 22:18:41,685 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:18:41,688 [run_inference] [INFO] idx = 2
+2023-04-24 22:18:41,739 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:18:41,741 [run_inference] [INFO] idx = 3
+2023-04-24 22:18:41,784 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:18:41,786 [run_inference] [INFO] idx = 4
+2023-04-24 22:18:41,823 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:18:41,825 [run_inference] [INFO] idx = 5
+2023-04-24 22:18:41,865 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:18:41,867 [run_inference] [INFO] idx = 6
+2023-04-24 22:18:41,909 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:18:41,911 [run_inference] [INFO] idx = 7
+2023-04-24 22:18:41,953 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:18:41,955 [run_inference] [INFO] idx = 8
+2023-04-24 22:18:41,993 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:18:41,995 [run_inference] [INFO] idx = 9
+2023-04-24 22:18:42,030 [client] [INFO] execute request
+2023-04-24 22:18:42,362 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:42,367 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:42,371 [client] [INFO] return true
+2023-04-24 22:18:42,655 [client] [INFO] execute request
+2023-04-24 22:18:42,979 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:42,984 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:42,988 [client] [INFO] return true
+2023-04-24 22:18:44,539 [client] [INFO] execute request
+2023-04-24 22:18:44,800 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:44,803 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:44,807 [client] [INFO] return true
+2023-04-24 22:18:46,114 [client] [INFO] execute request
+2023-04-24 22:18:46,365 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:46,368 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:46,370 [client] [INFO] return true
+2023-04-24 22:18:52,790 [client] [INFO] execute request
+2023-04-24 22:18:53,036 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:53,040 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:18:53,042 [client] [INFO] return true
+2023-04-24 22:19:05,495 [client] [INFO] execute request
+2023-04-24 22:19:05,768 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:19:05,771 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:19:05,775 [client] [INFO] return true
+2023-04-24 22:19:23,227 [client] [INFO] execute request
+2023-04-24 22:19:23,479 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:19:23,490 [client] [INFO] retry_base.outcome is {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:19:23,492 [client] [INFO] return true
+2023-04-24 22:20:07,680 [client] [INFO] execute request
+2023-04-24 22:20:08,563 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:20:08,567 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 22:20:08,590 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_0.feather
+2023-04-24 22:20:08,862 [run_inference] [INFO] idx = 0
+2023-04-24 22:20:08,897 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:20:08,899 [run_inference] [INFO] idx = 1
+2023-04-24 22:20:08,932 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:20:08,934 [run_inference] [INFO] idx = 2
+2023-04-24 22:20:08,960 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:20:08,962 [run_inference] [INFO] idx = 3
+2023-04-24 22:20:08,991 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:20:08,994 [run_inference] [INFO] idx = 4
+2023-04-24 22:20:09,018 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:20:09,020 [run_inference] [INFO] idx = 5
+2023-04-24 22:20:09,046 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:20:09,048 [run_inference] [INFO] idx = 6
+2023-04-24 22:20:09,078 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:20:09,081 [run_inference] [INFO] idx = 7
+2023-04-24 22:20:09,110 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:20:09,112 [run_inference] [INFO] idx = 8
+2023-04-24 22:20:09,159 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:20:09,161 [run_inference] [INFO] idx = 9
+2023-04-24 22:20:09,204 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:20:09,208 [run_inference] [INFO] Metrics Trial 1
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 22:20:09,233 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_1.feather
+2023-04-24 22:20:09,268 [run_inference] [INFO] idx = 0
+2023-04-24 22:20:09,311 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:20:09,315 [run_inference] [INFO] idx = 1
+2023-04-24 22:20:09,359 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:20:09,362 [run_inference] [INFO] idx = 2
+2023-04-24 22:20:09,397 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:20:09,400 [run_inference] [INFO] idx = 3
+2023-04-24 22:20:09,440 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:20:09,443 [run_inference] [INFO] idx = 4
+2023-04-24 22:20:09,478 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:20:09,481 [run_inference] [INFO] idx = 5
+2023-04-24 22:20:09,521 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:20:09,524 [run_inference] [INFO] idx = 6
+2023-04-24 22:20:09,553 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:20:09,555 [run_inference] [INFO] idx = 7
+2023-04-24 22:20:09,586 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:20:09,588 [run_inference] [INFO] idx = 8
+2023-04-24 22:20:09,625 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:20:09,627 [run_inference] [INFO] idx = 9
+2023-04-24 22:20:09,658 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:20:09,661 [run_inference] [INFO] Metrics Trial 2
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 22:20:09,678 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_2.feather
+2023-04-24 22:20:09,708 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "rec": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "f1": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "acc": [
+        0.9,
+        0.9,
+        0.9
+    ],
+    "prec_avg": 0.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.0,
+    "rec_std": 0.0,
+    "f1_avg": 0.0,
+    "f1_std": 0.0,
+    "acc_avg": 0.9,
+    "acc_std": 0.0
+}
+2023-04-24 22:20:09,713 [run_inference] [INFO] Metrics dumped to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/metrics.json
+2023-04-24 22:40:54,553 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:40:54,560 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:40:54,729 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:40:54,731 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:40:54,733 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:40:54,735 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 22:40:54,841 [run_inference] [INFO] idx = 0
+2023-04-24 22:40:54,878 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:40:54,881 [run_inference] [INFO] idx = 1
+2023-04-24 22:40:54,910 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:40:54,913 [run_inference] [INFO] idx = 2
+2023-04-24 22:40:54,944 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:54,946 [run_inference] [INFO] idx = 3
+2023-04-24 22:40:54,975 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:40:54,977 [run_inference] [INFO] idx = 4
+2023-04-24 22:40:55,009 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:40:55,011 [run_inference] [INFO] idx = 5
+2023-04-24 22:40:55,040 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:40:55,042 [run_inference] [INFO] idx = 6
+2023-04-24 22:40:55,068 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,070 [run_inference] [INFO] idx = 7
+2023-04-24 22:40:55,100 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:40:55,102 [run_inference] [INFO] idx = 8
+2023-04-24 22:40:55,130 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,132 [run_inference] [INFO] idx = 9
+2023-04-24 22:40:55,158 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:40:55,161 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 22:40:55,175 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_0.feather
+2023-04-24 22:40:55,312 [run_inference] [INFO] idx = 0
+2023-04-24 22:40:55,344 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:40:55,346 [run_inference] [INFO] idx = 1
+2023-04-24 22:40:55,375 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:40:55,378 [run_inference] [INFO] idx = 2
+2023-04-24 22:40:55,404 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,406 [run_inference] [INFO] idx = 3
+2023-04-24 22:40:55,436 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:40:55,439 [run_inference] [INFO] idx = 4
+2023-04-24 22:40:55,470 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:40:55,472 [run_inference] [INFO] idx = 5
+2023-04-24 22:40:55,499 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:40:55,501 [run_inference] [INFO] idx = 6
+2023-04-24 22:40:55,526 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,528 [run_inference] [INFO] idx = 7
+2023-04-24 22:40:55,553 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:40:55,555 [run_inference] [INFO] idx = 8
+2023-04-24 22:40:55,580 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,582 [run_inference] [INFO] idx = 9
+2023-04-24 22:40:55,612 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:40:55,615 [run_inference] [INFO] Metrics Trial 1
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 22:40:55,634 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_1.feather
+2023-04-24 22:40:55,670 [run_inference] [INFO] idx = 0
+2023-04-24 22:40:55,710 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:40:55,713 [run_inference] [INFO] idx = 1
+2023-04-24 22:40:55,754 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:40:55,757 [run_inference] [INFO] idx = 2
+2023-04-24 22:40:55,793 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,795 [run_inference] [INFO] idx = 3
+2023-04-24 22:40:55,826 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:40:55,828 [run_inference] [INFO] idx = 4
+2023-04-24 22:40:55,855 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:40:55,857 [run_inference] [INFO] idx = 5
+2023-04-24 22:40:55,889 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:40:55,891 [run_inference] [INFO] idx = 6
+2023-04-24 22:40:55,926 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,928 [run_inference] [INFO] idx = 7
+2023-04-24 22:40:55,958 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:40:55,960 [run_inference] [INFO] idx = 8
+2023-04-24 22:40:55,990 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:40:55,992 [run_inference] [INFO] idx = 9
+2023-04-24 22:40:56,023 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:40:56,027 [run_inference] [INFO] Metrics Trial 2
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 22:40:56,042 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_2.feather
+2023-04-24 22:40:56,077 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "rec": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "f1": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "acc": [
+        0.9,
+        0.9,
+        0.9
+    ],
+    "prec_avg": 0.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.0,
+    "rec_std": 0.0,
+    "f1_avg": 0.0,
+    "f1_std": 0.0,
+    "acc_avg": 0.9,
+    "acc_std": 0.0
+}
+2023-04-24 22:40:56,081 [run_inference] [INFO] Metrics dumped to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/metrics.json
+2023-04-24 22:44:07,303 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 20,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:44:07,310 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:44:07,478 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:44:07,480 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:44:07,482 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:44:07,484 [run_inference] [INFO] Running 20 examples for 3 trials.
+2023-04-24 22:44:07,566 [run_inference] [INFO] idx = 0
+2023-04-24 22:44:07,602 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:44:07,606 [run_inference] [INFO] idx = 1
+2023-04-24 22:44:07,638 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:44:07,640 [run_inference] [INFO] idx = 2
+2023-04-24 22:44:07,681 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:44:07,683 [run_inference] [INFO] idx = 3
+2023-04-24 22:44:07,716 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:44:07,718 [run_inference] [INFO] idx = 4
+2023-04-24 22:44:07,783 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:44:07,785 [run_inference] [INFO] idx = 5
+2023-04-24 22:44:07,835 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:44:07,838 [run_inference] [INFO] idx = 6
+2023-04-24 22:44:07,887 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:44:07,889 [run_inference] [INFO] idx = 7
+2023-04-24 22:44:07,936 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:44:07,939 [run_inference] [INFO] idx = 8
+2023-04-24 22:44:07,981 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:44:07,983 [run_inference] [INFO] idx = 9
+2023-04-24 22:44:08,024 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:44:08,061 [client] [INFO] execute request
+2023-04-24 22:44:08,344 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:44:08,503 [client] [INFO] execute request
+2023-04-24 22:44:08,810 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:44:10,496 [client] [INFO] execute request
+2023-04-24 22:44:10,735 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:44:12,072 [client] [INFO] execute request
+2023-04-24 22:44:12,312 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:44:13,579 [client] [INFO] execute request
+2023-04-24 22:44:13,846 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:44:23,037 [client] [INFO] execute request
+2023-04-24 22:44:23,310 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:44:39,034 [client] [INFO] execute request
+2023-04-24 22:44:39,268 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:45:21,375 [client] [INFO] execute request
+2023-04-24 22:45:21,624 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:06,281 [client] [INFO] execute request
+2023-04-24 22:46:06,568 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:10,027 [client] [INFO] execute request
+2023-04-24 22:46:11,328 [client] [INFO] execute request
+2023-04-24 22:46:11,543 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:12,103 [client] [INFO] execute request
+2023-04-24 22:46:12,342 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:13,201 [client] [INFO] execute request
+2023-04-24 22:46:13,446 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:16,952 [client] [INFO] execute request
+2023-04-24 22:46:17,216 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:24,740 [client] [INFO] execute request
+2023-04-24 22:46:25,009 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:33,791 [client] [INFO] execute request
+2023-04-24 22:46:34,035 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:46:38,030 [client] [INFO] execute request
+2023-04-24 22:46:38,271 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:47:26,206 [client] [INFO] execute request
+2023-04-24 22:47:26,459 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:48:20,571 [client] [INFO] execute request
+2023-04-24 22:48:20,866 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:51:08,848 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 20,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:51:08,855 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:51:08,994 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:51:08,996 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:51:08,998 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:51:09,001 [run_inference] [INFO] Running 20 examples for 3 trials.
+2023-04-24 22:51:09,096 [run_inference] [INFO] idx = 0
+2023-04-24 22:51:09,141 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:51:09,145 [run_inference] [INFO] idx = 1
+2023-04-24 22:51:09,200 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:51:09,203 [run_inference] [INFO] idx = 2
+2023-04-24 22:51:09,246 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:51:09,248 [run_inference] [INFO] idx = 3
+2023-04-24 22:51:09,295 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:51:09,298 [run_inference] [INFO] idx = 4
+2023-04-24 22:51:09,341 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:51:09,344 [run_inference] [INFO] idx = 5
+2023-04-24 22:51:09,390 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:51:09,392 [run_inference] [INFO] idx = 6
+2023-04-24 22:51:09,435 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:51:09,438 [run_inference] [INFO] idx = 7
+2023-04-24 22:51:09,478 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:51:09,480 [run_inference] [INFO] idx = 8
+2023-04-24 22:51:09,515 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:51:09,517 [run_inference] [INFO] idx = 9
+2023-04-24 22:51:09,555 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:51:09,624 [client] [INFO] execute request
+2023-04-24 22:51:10,474 [client] [INFO] execute request
+2023-04-24 22:51:10,776 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:51:30,800 [client] [INFO] execute request
+2023-04-24 22:51:31,091 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:51:51,115 [client] [INFO] execute request
+2023-04-24 22:51:51,376 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:52:11,400 [client] [INFO] execute request
+2023-04-24 22:52:11,646 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:52:31,669 [client] [INFO] execute request
+2023-04-24 22:52:31,966 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:52:51,989 [client] [INFO] execute request
+2023-04-24 22:52:52,223 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:53:12,258 [client] [INFO] execute request
+2023-04-24 22:53:12,522 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:55:16,473 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 20,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:55:16,480 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:55:16,628 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:55:16,630 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:55:16,632 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:55:16,633 [run_inference] [INFO] Running 20 examples for 3 trials.
+2023-04-24 22:55:16,723 [run_inference] [INFO] idx = 0
+2023-04-24 22:55:16,762 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:55:16,766 [run_inference] [INFO] idx = 1
+2023-04-24 22:55:16,803 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:55:16,805 [run_inference] [INFO] idx = 2
+2023-04-24 22:55:16,839 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:55:16,842 [run_inference] [INFO] idx = 3
+2023-04-24 22:55:16,882 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:55:16,884 [run_inference] [INFO] idx = 4
+2023-04-24 22:55:16,922 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:55:16,925 [run_inference] [INFO] idx = 5
+2023-04-24 22:55:16,967 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:55:16,970 [run_inference] [INFO] idx = 6
+2023-04-24 22:55:17,015 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:55:17,018 [run_inference] [INFO] idx = 7
+2023-04-24 22:55:17,070 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:55:17,073 [run_inference] [INFO] idx = 8
+2023-04-24 22:55:17,113 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:55:17,116 [run_inference] [INFO] idx = 9
+2023-04-24 22:55:17,162 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:55:17,269 [client] [INFO] execute request
+2023-04-24 22:55:17,595 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:56:17,659 [client] [INFO] execute request
+2023-04-24 22:56:17,952 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:58:40,902 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 20,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 22:58:40,909 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 22:58:41,060 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 22:58:41,062 [run_inference] [INFO] Train shape is 469
+2023-04-24 22:58:41,064 [run_inference] [INFO] Test shape is 65
+2023-04-24 22:58:41,066 [run_inference] [INFO] Running 20 examples for 3 trials.
+2023-04-24 22:58:41,143 [run_inference] [INFO] idx = 0
+2023-04-24 22:58:41,169 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 22:58:41,172 [run_inference] [INFO] idx = 1
+2023-04-24 22:58:41,196 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 22:58:41,198 [run_inference] [INFO] idx = 2
+2023-04-24 22:58:41,224 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:58:41,226 [run_inference] [INFO] idx = 3
+2023-04-24 22:58:41,250 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 22:58:41,252 [run_inference] [INFO] idx = 4
+2023-04-24 22:58:41,277 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 22:58:41,279 [run_inference] [INFO] idx = 5
+2023-04-24 22:58:41,303 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 22:58:41,305 [run_inference] [INFO] idx = 6
+2023-04-24 22:58:41,330 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:58:41,332 [run_inference] [INFO] idx = 7
+2023-04-24 22:58:41,360 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 22:58:41,362 [run_inference] [INFO] idx = 8
+2023-04-24 22:58:41,388 [run_inference] [INFO] ====> Canon <====
+2023-04-24 22:58:41,390 [run_inference] [INFO] idx = 9
+2023-04-24 22:58:41,421 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 22:58:41,534 [client] [INFO] execute request
+2023-04-24 22:58:41,823 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 22:59:46,891 [client] [INFO] execute request
+2023-04-24 22:59:47,779 [client] [INFO] execute request
+2023-04-24 22:59:48,013 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:00:53,082 [client] [INFO] execute request
+2023-04-24 23:00:53,363 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:01:58,433 [client] [INFO] execute request
+2023-04-24 23:01:58,738 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:03:03,806 [client] [INFO] execute request
+2023-04-24 23:03:04,080 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:25,030 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 20,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 23:05:25,037 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 23:05:25,155 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 23:05:25,158 [run_inference] [INFO] Train shape is 469
+2023-04-24 23:05:25,160 [run_inference] [INFO] Test shape is 65
+2023-04-24 23:05:25,161 [run_inference] [INFO] Running 20 examples for 3 trials.
+2023-04-24 23:05:25,240 [run_inference] [INFO] idx = 0
+2023-04-24 23:05:25,266 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 23:05:25,268 [run_inference] [INFO] idx = 1
+2023-04-24 23:05:25,297 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 23:05:25,299 [run_inference] [INFO] idx = 2
+2023-04-24 23:05:25,329 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:05:25,331 [run_inference] [INFO] idx = 3
+2023-04-24 23:05:25,370 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 23:05:25,372 [run_inference] [INFO] idx = 4
+2023-04-24 23:05:25,409 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 23:05:25,411 [run_inference] [INFO] idx = 5
+2023-04-24 23:05:25,443 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 23:05:25,446 [run_inference] [INFO] idx = 6
+2023-04-24 23:05:25,489 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:05:25,492 [run_inference] [INFO] idx = 7
+2023-04-24 23:05:25,529 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 23:05:25,532 [run_inference] [INFO] idx = 8
+2023-04-24 23:05:25,567 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:05:25,570 [run_inference] [INFO] idx = 9
+2023-04-24 23:05:25,603 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 23:05:25,728 [client] [INFO] execute request
+2023-04-24 23:05:25,997 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:26,006 [client] [INFO] execute request
+2023-04-24 23:05:26,278 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:27,353 [client] [INFO] execute request
+2023-04-24 23:05:28,165 [client] [INFO] execute request
+2023-04-24 23:05:28,410 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:29,167 [client] [INFO] execute request
+2023-04-24 23:05:29,419 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:30,987 [client] [INFO] execute request
+2023-04-24 23:05:31,212 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:35,010 [client] [INFO] execute request
+2023-04-24 23:05:35,238 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:36,158 [client] [INFO] execute request
+2023-04-24 23:05:36,425 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:36,478 [client] [INFO] execute request
+2023-04-24 23:05:36,734 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:49,040 [client] [INFO] execute request
+2023-04-24 23:05:49,326 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:05:54,914 [client] [INFO] execute request
+2023-04-24 23:05:55,172 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:06:01,338 [client] [INFO] execute request
+2023-04-24 23:06:01,587 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:06:33,774 [client] [INFO] execute request
+2023-04-24 23:06:34,055 [client] [ERROR] {'error': {'message': 'Rate limit reached for default-gpt-3.5-turbo in organization org-yNg0p7SQuMCWv9UOKIRahO9x on requests per min. Limit: 3 / min. Please try again in 20s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.', 'type': 'requests', 'param': None, 'code': None}}
+2023-04-24 23:09:11,085 [run_inference] [INFO] {
+    "data_dir": "/mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 10,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-24 23:09:11,092 [data_utils] [INFO] Processing /mnt/e/test/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-24 23:09:11,218 [run_inference] [INFO] Using 0 instruction idx
+2023-04-24 23:09:11,221 [run_inference] [INFO] Train shape is 469
+2023-04-24 23:09:11,223 [run_inference] [INFO] Test shape is 65
+2023-04-24 23:09:11,225 [run_inference] [INFO] Running 10 examples for 3 trials.
+2023-04-24 23:09:11,350 [run_inference] [INFO] idx = 0
+2023-04-24 23:09:11,384 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 23:09:11,388 [run_inference] [INFO] idx = 1
+2023-04-24 23:09:11,419 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 23:09:11,422 [run_inference] [INFO] idx = 2
+2023-04-24 23:09:11,454 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:11,456 [run_inference] [INFO] idx = 3
+2023-04-24 23:09:11,492 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 23:09:11,496 [run_inference] [INFO] idx = 4
+2023-04-24 23:09:11,531 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 23:09:11,534 [run_inference] [INFO] idx = 5
+2023-04-24 23:09:11,572 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 23:09:11,574 [run_inference] [INFO] idx = 6
+2023-04-24 23:09:11,606 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:11,608 [run_inference] [INFO] idx = 7
+2023-04-24 23:09:11,637 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 23:09:11,639 [run_inference] [INFO] idx = 8
+2023-04-24 23:09:11,668 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:11,670 [run_inference] [INFO] idx = 9
+2023-04-24 23:09:11,698 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 23:09:11,701 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 23:09:11,716 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_0.feather
+2023-04-24 23:09:11,854 [run_inference] [INFO] idx = 0
+2023-04-24 23:09:11,884 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 23:09:11,886 [run_inference] [INFO] idx = 1
+2023-04-24 23:09:11,911 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 23:09:11,913 [run_inference] [INFO] idx = 2
+2023-04-24 23:09:11,940 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:11,942 [run_inference] [INFO] idx = 3
+2023-04-24 23:09:11,967 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 23:09:11,969 [run_inference] [INFO] idx = 4
+2023-04-24 23:09:11,996 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 23:09:11,998 [run_inference] [INFO] idx = 5
+2023-04-24 23:09:12,025 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 23:09:12,027 [run_inference] [INFO] idx = 6
+2023-04-24 23:09:12,052 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:12,054 [run_inference] [INFO] idx = 7
+2023-04-24 23:09:12,080 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 23:09:12,082 [run_inference] [INFO] idx = 8
+2023-04-24 23:09:12,106 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:12,108 [run_inference] [INFO] idx = 9
+2023-04-24 23:09:12,135 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 23:09:12,138 [run_inference] [INFO] Metrics Trial 1
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 23:09:12,151 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_1.feather
+2023-04-24 23:09:12,176 [run_inference] [INFO] idx = 0
+2023-04-24 23:09:12,201 [run_inference] [INFO] ====> Onkyo <====
+2023-04-24 23:09:12,203 [run_inference] [INFO] idx = 1
+2023-04-24 23:09:12,233 [run_inference] [INFO] ====> Speck Products <====
+2023-04-24 23:09:12,235 [run_inference] [INFO] idx = 2
+2023-04-24 23:09:12,275 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:12,277 [run_inference] [INFO] idx = 3
+2023-04-24 23:09:12,317 [run_inference] [INFO] ====> Pioneer <====
+2023-04-24 23:09:12,320 [run_inference] [INFO] idx = 4
+2023-04-24 23:09:12,359 [run_inference] [INFO] ====> Peerless <====
+2023-04-24 23:09:12,362 [run_inference] [INFO] idx = 5
+2023-04-24 23:09:12,402 [run_inference] [INFO] ====> Samsung <====
+2023-04-24 23:09:12,405 [run_inference] [INFO] idx = 6
+2023-04-24 23:09:12,442 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:12,444 [run_inference] [INFO] idx = 7
+2023-04-24 23:09:12,482 [run_inference] [INFO] ====> Linksys <====
+2023-04-24 23:09:12,484 [run_inference] [INFO] idx = 8
+2023-04-24 23:09:12,516 [run_inference] [INFO] ====> Canon <====
+2023-04-24 23:09:12,519 [run_inference] [INFO] idx = 9
+2023-04-24 23:09:12,546 [run_inference] [INFO] ====> Transcend <====
+2023-04-24 23:09:12,550 [run_inference] [INFO] Metrics Trial 2
+Prec: 0.000 Recall: 0.000 Acc: 0.900 F1: 0.000
+2023-04-24 23:09:12,564 [run_inference] [INFO] Saved to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/trial_2.feather
+2023-04-24 23:09:12,603 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "rec": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "f1": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "acc": [
+        0.9,
+        0.9,
+        0.9
+    ],
+    "prec_avg": 0.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.0,
+    "rec_std": 0.0,
+    "f1_avg": 0.0,
+    "f1_std": 0.0,
+    "acc_avg": 0.9,
+    "acc_std": 0.0
+}
+2023-04-24 23:09:12,607 [run_inference] [INFO] Metrics dumped to outputs/Buy/test/default/10k_0inst_0cb_random_10run_0dry/metrics.json

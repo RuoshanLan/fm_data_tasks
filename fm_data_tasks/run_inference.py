@@ -224,8 +224,9 @@ def main():
         idx = 0
         # Run a few for printing -- they are cached
         for _ in range(min(num_run, args.num_print)):
-            logger.info(prompt(queries[idx]))
+            #logger.info(prompt(queries[idx]))
             if not args.dry_run:
+                logger.info(f"idx = {idx}")
                 pred = manifest_instance.run(
                     prompt(queries[idx]), overwrite_cache=args.overwrite_cache
                 )
