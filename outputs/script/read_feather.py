@@ -7,7 +7,7 @@ def main():
     print(data.head(20))
     pd.set_option('display.max_colwidth', None)
     pd.set_option('display.max_rows', None)
-    print(data[data["label_str"].str.strip("\n") != data["preds"]][["text", "label_str", "preds"]])
+    print(data[data["label_str"].str.strip().str.lower() != data["preds"].str.strip().str.lower()][["text", "label_str", "preds"]])
 
 if __name__ == "__main__":
     main()
