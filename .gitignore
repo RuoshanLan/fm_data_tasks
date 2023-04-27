@@ -1,5 +1,7 @@
 _build/
 data/munching/
+data/
+outputs/
 
 *._*
 # Pickle Saved
