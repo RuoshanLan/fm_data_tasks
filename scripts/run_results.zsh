@@ -4,7 +4,7 @@
 # Commands to run 200 random and manual examples for each dataset with metrics
 
 # Entity Matching Fodors-Zagats
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --num_trials 3 --data_dir data/datasets/entity_matching/structured/Fodors-Zagats --nan_tok "" --do_test --class_balanced
+# poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --num_trials 3 --data_dir data/datasets/entity_matching/structured/Fodors-Zagats --nan_tok "" --do_test --class_balanced
 
 poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 0 --sample_method random --data_dir data/datasets/entity_matching/structured/Fodors-Zagats --do_test --nan_tok "" --add_task_instruction
 

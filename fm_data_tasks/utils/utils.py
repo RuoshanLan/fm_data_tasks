@@ -27,7 +27,7 @@ def compute_metrics(preds: List, golds: List, task: str):
         mets["total"] += 1
         if task in {
             "data_imputation",
-            "entity_matching",
+            # "entity_matching",
         }:
             crc = pred == label
         elif task in {"entity_matching", "schema_matching", "error_detection_spelling"}:

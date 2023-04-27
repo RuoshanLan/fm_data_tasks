@@ -1,0 +1,1235 @@
+2023-04-25 11:24:45,716 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Fodors-Zagats",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-25 11:24:45,724 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Fodors-Zagats
+2023-04-25 11:24:46,099 [data_utils] [INFO] Class balanced: train sample per class: 66
+2023-04-25 11:24:46,109 [run_inference] [INFO] Using 0 instruction idx
+2023-04-25 11:24:46,112 [run_inference] [INFO] Train shape is 132
+2023-04-25 11:24:46,115 [run_inference] [INFO] Test shape is 189
+2023-04-25 11:24:46,116 [run_inference] [INFO] Running 189 examples for 3 trials.
+2023-04-25 12:27:49,416 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.944 Recall: 0.773 Acc: 0.968 F1: 0.850
+2023-04-25 12:27:49,464 [run_inference] [INFO] Saved to outputs/Fodors-Zagats/test/default/10k_0inst_1cb_random_200run_0dry/trial_0.feather
+2023-04-25 13:30:50,232 [run_inference] [INFO] Metrics Trial 1
+Prec: 0.944 Recall: 0.773 Acc: 0.968 F1: 0.850
+2023-04-25 13:30:50,244 [run_inference] [INFO] Saved to outputs/Fodors-Zagats/test/default/10k_0inst_1cb_random_200run_0dry/trial_1.feather
+2023-04-25 14:44:56,024 [run_inference] [INFO] Metrics Trial 2
+Prec: 0.944 Recall: 0.773 Acc: 0.968 F1: 0.850
+2023-04-25 14:44:56,037 [run_inference] [INFO] Saved to outputs/Fodors-Zagats/test/default/10k_0inst_1cb_random_200run_0dry/trial_2.feather
+2023-04-25 14:44:56,106 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.9444444444444444,
+        0.9444444444444444,
+        0.9444444444444444
+    ],
+    "rec": [
+        0.7727272727272727,
+        0.7727272727272727,
+        0.7727272727272727
+    ],
+    "f1": [
+        0.85,
+        0.85,
+        0.85
+    ],
+    "acc": [
+        0.9682539682539683,
+        0.9682539682539683,
+        0.9682539682539683
+    ],
+    "prec_avg": 0.9444444444444443,
+    "prec_std": 1.1102230246251565e-16,
+    "rec_avg": 0.7727272727272728,
+    "rec_std": 1.1102230246251565e-16,
+    "f1_avg": 0.85,
+    "f1_std": 0.0,
+    "acc_avg": 0.9682539682539683,
+    "acc_std": 0.0
+}
+2023-04-25 14:44:56,122 [run_inference] [INFO] Metrics dumped to outputs/Fodors-Zagats/test/default/10k_0inst_1cb_random_200run_0dry/metrics.json
+2023-04-25 18:11:21,624 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Fodors-Zagats",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-25 18:11:21,637 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Fodors-Zagats
+2023-04-25 18:11:21,966 [run_inference] [INFO] Using 0 instruction idx
+2023-04-25 18:11:21,968 [run_inference] [INFO] Train shape is 567
+2023-04-25 18:11:21,970 [run_inference] [INFO] Test shape is 189
+2023-04-25 18:11:21,971 [run_inference] [INFO] Running 189 examples for 1 trials.
+2023-04-25 19:39:51,901 [run_inference] [INFO] Metrics Trial 0
+Prec: 1.000 Recall: 0.682 Acc: 0.963 F1: 0.811
+2023-04-25 19:39:51,958 [run_inference] [INFO] Saved to outputs/Fodors-Zagats/test/default/0k_1inst_0cb_random_200run_0dry/trial_0.feather
+2023-04-25 19:39:52,122 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        1.0
+    ],
+    "rec": [
+        0.6818181818181818
+    ],
+    "f1": [
+        0.8108108108108109
+    ],
+    "acc": [
+        0.9629629629629629
+    ],
+    "prec_avg": 1.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.6818181818181818,
+    "rec_std": 0.0,
+    "f1_avg": 0.8108108108108109,
+    "f1_std": 0.0,
+    "acc_avg": 0.9629629629629629,
+    "acc_std": 0.0
+}
+2023-04-25 19:39:52,132 [run_inference] [INFO] Metrics dumped to outputs/Fodors-Zagats/test/default/0k_1inst_0cb_random_200run_0dry/metrics.json
+2023-04-25 19:40:59,592 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Fodors-Zagats",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-25 19:40:59,601 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Fodors-Zagats
+2023-04-25 19:40:59,890 [run_inference] [INFO] Using 0 instruction idx
+2023-04-25 19:40:59,891 [run_inference] [INFO] Train shape is 567
+2023-04-25 19:40:59,893 [run_inference] [INFO] Test shape is 189
+2023-04-25 19:40:59,894 [run_inference] [INFO] Running 189 examples for 1 trials.
+2023-04-25 21:32:03,067 [run_inference] [INFO] Metrics Trial 0
+Prec: 1.000 Recall: 0.818 Acc: 0.979 F1: 0.900
+2023-04-25 21:32:03,129 [run_inference] [INFO] Saved to outputs/Fodors-Zagats/test/default/1k_0inst_0cb_manual_200run_0dry/trial_0.feather
+2023-04-25 21:32:03,221 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        1.0
+    ],
+    "rec": [
+        0.8181818181818182
+    ],
+    "f1": [
+        0.9
+    ],
+    "acc": [
+        0.9788359788359788
+    ],
+    "prec_avg": 1.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.8181818181818182,
+    "rec_std": 0.0,
+    "f1_avg": 0.9,
+    "f1_std": 0.0,
+    "acc_avg": 0.9788359788359788,
+    "acc_std": 0.0
+}
+2023-04-25 21:32:03,234 [run_inference] [INFO] Metrics dumped to outputs/Fodors-Zagats/test/default/1k_0inst_0cb_manual_200run_0dry/metrics.json
+2023-04-25 21:57:49,927 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Beer",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-25 21:57:49,937 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Beer
+2023-04-25 21:57:50,052 [data_utils] [INFO] Class balanced: train sample per class: 40
+2023-04-25 21:57:50,060 [run_inference] [INFO] Using 0 instruction idx
+2023-04-25 21:57:50,062 [run_inference] [INFO] Train shape is 80
+2023-04-25 21:57:50,063 [run_inference] [INFO] Test shape is 91
+2023-04-25 21:57:50,065 [run_inference] [INFO] Running 91 examples for 3 trials.
+2023-04-25 23:15:08,432 [run_inference] [INFO] Metrics Trial 0
+Prec: 1.000 Recall: 0.786 Acc: 0.967 F1: 0.880
+2023-04-25 23:15:08,472 [run_inference] [INFO] Saved to outputs/Beer/test/default/10k_0inst_1cb_random_200run_0dry/trial_0.feather
+2023-04-26 00:01:18,244 [run_inference] [INFO] Metrics Trial 1
+Prec: 1.000 Recall: 0.786 Acc: 0.967 F1: 0.880
+2023-04-26 00:01:18,273 [run_inference] [INFO] Saved to outputs/Beer/test/default/10k_0inst_1cb_random_200run_0dry/trial_1.feather
+2023-04-26 00:31:18,825 [run_inference] [INFO] Metrics Trial 2
+Prec: 1.000 Recall: 0.786 Acc: 0.967 F1: 0.880
+2023-04-26 00:31:18,850 [run_inference] [INFO] Saved to outputs/Beer/test/default/10k_0inst_1cb_random_200run_0dry/trial_2.feather
+2023-04-26 00:31:18,917 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "rec": [
+        0.7857142857142857,
+        0.7857142857142857,
+        0.7857142857142857
+    ],
+    "f1": [
+        0.88,
+        0.88,
+        0.88
+    ],
+    "acc": [
+        0.967032967032967,
+        0.967032967032967,
+        0.967032967032967
+    ],
+    "prec_avg": 1.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.7857142857142857,
+    "rec_std": 0.0,
+    "f1_avg": 0.88,
+    "f1_std": 0.0,
+    "acc_avg": 0.967032967032967,
+    "acc_std": 0.0
+}
+2023-04-26 00:31:18,952 [run_inference] [INFO] Metrics dumped to outputs/Beer/test/default/10k_0inst_1cb_random_200run_0dry/metrics.json
+2023-04-26 00:32:28,885 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Beer",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 00:32:28,895 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Beer
+2023-04-26 00:32:29,035 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 00:32:29,037 [run_inference] [INFO] Train shape is 268
+2023-04-26 00:32:29,039 [run_inference] [INFO] Test shape is 91
+2023-04-26 00:32:29,040 [run_inference] [INFO] Running 91 examples for 1 trials.
+2023-04-26 01:03:18,511 [run_inference] [INFO] Metrics Trial 0
+Prec: 1.000 Recall: 0.714 Acc: 0.956 F1: 0.833
+2023-04-26 01:03:18,524 [run_inference] [INFO] Saved to outputs/Beer/test/default/0k_1inst_0cb_random_200run_0dry/trial_0.feather
+2023-04-26 01:03:18,565 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        1.0
+    ],
+    "rec": [
+        0.7142857142857143
+    ],
+    "f1": [
+        0.8333333333333333
+    ],
+    "acc": [
+        0.9560439560439561
+    ],
+    "prec_avg": 1.0,
+    "prec_std": 0.0,
+    "rec_avg": 0.7142857142857143,
+    "rec_std": 0.0,
+    "f1_avg": 0.8333333333333333,
+    "f1_std": 0.0,
+    "acc_avg": 0.9560439560439561,
+    "acc_std": 0.0
+}
+2023-04-26 01:03:18,581 [run_inference] [INFO] Metrics dumped to outputs/Beer/test/default/0k_1inst_0cb_random_200run_0dry/metrics.json
+2023-04-26 01:04:25,201 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Beer",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 01:04:25,210 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Beer
+2023-04-26 01:04:25,320 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 01:04:25,322 [run_inference] [INFO] Train shape is 268
+2023-04-26 01:04:25,323 [run_inference] [INFO] Test shape is 91
+2023-04-26 01:04:25,324 [run_inference] [INFO] Running 91 examples for 1 trials.
+2023-04-26 01:35:14,837 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.308 Recall: 0.857 Acc: 0.681 F1: 0.453
+2023-04-26 01:35:14,846 [run_inference] [INFO] Saved to outputs/Beer/test/default/1k_0inst_0cb_manual_200run_0dry/trial_0.feather
+2023-04-26 01:35:14,872 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.3076923076923077
+    ],
+    "rec": [
+        0.8571428571428571
+    ],
+    "f1": [
+        0.45283018867924535
+    ],
+    "acc": [
+        0.6813186813186813
+    ],
+    "prec_avg": 0.3076923076923077,
+    "prec_std": 0.0,
+    "rec_avg": 0.8571428571428571,
+    "rec_std": 0.0,
+    "f1_avg": 0.45283018867924535,
+    "f1_std": 0.0,
+    "acc_avg": 0.6813186813186813,
+    "acc_std": 0.0
+}
+2023-04-26 01:35:14,876 [run_inference] [INFO] Metrics dumped to outputs/Beer/test/default/1k_0inst_0cb_manual_200run_0dry/metrics.json
+2023-04-26 01:36:21,167 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/iTunes-Amazon",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 01:36:21,176 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/iTunes-Amazon
+2023-04-26 01:36:21,591 [data_utils] [INFO] Class balanced: train sample per class: 78
+2023-04-26 01:36:21,596 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 01:36:21,598 [run_inference] [INFO] Train shape is 156
+2023-04-26 01:36:21,599 [run_inference] [INFO] Test shape is 109
+2023-04-26 01:36:21,600 [run_inference] [INFO] Running 109 examples for 3 trials.
+2023-04-26 02:51:15,740 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.852 Recall: 0.852 Acc: 0.927 F1: 0.852
+2023-04-26 02:51:15,769 [run_inference] [INFO] Saved to outputs/iTunes-Amazon/test/default/10k_0inst_1cb_random_200run_0dry/trial_0.feather
+2023-04-26 08:02:16,034 [run_inference] [INFO] Metrics Trial 1
+Prec: 0.852 Recall: 0.852 Acc: 0.927 F1: 0.852
+2023-04-26 08:02:16,055 [run_inference] [INFO] Saved to outputs/iTunes-Amazon/test/default/10k_0inst_1cb_random_200run_0dry/trial_1.feather
+2023-04-26 08:38:16,696 [run_inference] [INFO] Metrics Trial 2
+Prec: 0.852 Recall: 0.852 Acc: 0.927 F1: 0.852
+2023-04-26 08:38:16,711 [run_inference] [INFO] Saved to outputs/iTunes-Amazon/test/default/10k_0inst_1cb_random_200run_0dry/trial_2.feather
+2023-04-26 08:38:16,802 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.8518518518518519,
+        0.8518518518518519,
+        0.8518518518518519
+    ],
+    "rec": [
+        0.8518518518518519,
+        0.8518518518518519,
+        0.8518518518518519
+    ],
+    "f1": [
+        0.8518518518518519,
+        0.8518518518518519,
+        0.8518518518518519
+    ],
+    "acc": [
+        0.926605504587156,
+        0.926605504587156,
+        0.926605504587156
+    ],
+    "prec_avg": 0.8518518518518517,
+    "prec_std": 1.1102230246251565e-16,
+    "rec_avg": 0.8518518518518517,
+    "rec_std": 1.1102230246251565e-16,
+    "f1_avg": 0.8518518518518517,
+    "f1_std": 1.1102230246251565e-16,
+    "acc_avg": 0.926605504587156,
+    "acc_std": 0.0
+}
+2023-04-26 08:38:16,822 [run_inference] [INFO] Metrics dumped to outputs/iTunes-Amazon/test/default/10k_0inst_1cb_random_200run_0dry/metrics.json
+2023-04-26 08:39:26,568 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/iTunes-Amazon",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 08:39:26,579 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/iTunes-Amazon
+2023-04-26 08:39:27,046 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 08:39:27,048 [run_inference] [INFO] Train shape is 321
+2023-04-26 08:39:27,049 [run_inference] [INFO] Test shape is 109
+2023-04-26 08:39:27,051 [run_inference] [INFO] Running 109 examples for 1 trials.
+2023-04-26 14:01:56,760 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.893 Recall: 0.926 Acc: 0.954 F1: 0.909
+2023-04-26 14:01:56,813 [run_inference] [INFO] Saved to outputs/iTunes-Amazon/test/default/0k_1inst_0cb_random_200run_0dry/trial_0.feather
+2023-04-26 14:01:57,151 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.8928571428571429
+    ],
+    "rec": [
+        0.9259259259259259
+    ],
+    "f1": [
+        0.9090909090909091
+    ],
+    "acc": [
+        0.9541284403669725
+    ],
+    "prec_avg": 0.8928571428571429,
+    "prec_std": 0.0,
+    "rec_avg": 0.9259259259259259,
+    "rec_std": 0.0,
+    "f1_avg": 0.9090909090909091,
+    "f1_std": 0.0,
+    "acc_avg": 0.9541284403669725,
+    "acc_std": 0.0
+}
+2023-04-26 14:01:57,442 [run_inference] [INFO] Metrics dumped to outputs/iTunes-Amazon/test/default/0k_1inst_0cb_random_200run_0dry/metrics.json
+2023-04-26 14:03:04,185 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/iTunes-Amazon",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 14:03:04,199 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/iTunes-Amazon
+2023-04-26 14:03:04,732 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 14:03:04,734 [run_inference] [INFO] Train shape is 321
+2023-04-26 14:03:04,735 [run_inference] [INFO] Test shape is 109
+2023-04-26 14:03:04,737 [run_inference] [INFO] Running 109 examples for 1 trials.
+2023-04-26 14:46:59,316 [run_inference] [INFO] Metrics Trial 0
+Prec: 0.897 Recall: 0.963 Acc: 0.963 F1: 0.929
+2023-04-26 14:46:59,356 [run_inference] [INFO] Saved to outputs/iTunes-Amazon/test/default/1k_0inst_0cb_manual_200run_0dry/trial_0.feather
+2023-04-26 14:46:59,732 [run_inference] [INFO] Final Metrics {
+    "prec": [
+        0.896551724137931
+    ],
+    "rec": [
+        0.9629629629629629
+    ],
+    "f1": [
+        0.9285714285714286
+    ],
+    "acc": [
+        0.963302752293578
+    ],
+    "prec_avg": 0.896551724137931,
+    "prec_std": 0.0,
+    "rec_avg": 0.9629629629629629,
+    "rec_std": 0.0,
+    "f1_avg": 0.9285714285714286,
+    "f1_std": 0.0,
+    "acc_avg": 0.963302752293578,
+    "acc_std": 0.0
+}
+2023-04-26 14:46:59,766 [run_inference] [INFO] Metrics dumped to outputs/iTunes-Amazon/test/default/1k_0inst_0cb_manual_200run_0dry/metrics.json
+2023-04-26 14:48:07,990 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Walmart-Amazon",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 14:48:08,070 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Walmart-Amazon
+2023-04-26 14:48:09,759 [data_utils] [INFO] Class balanced: train sample per class: 576
+2023-04-26 14:48:09,770 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 14:48:09,773 [run_inference] [INFO] Train shape is 1152
+2023-04-26 14:48:09,775 [run_inference] [INFO] Test shape is 2049
+2023-04-26 14:48:09,776 [run_inference] [INFO] Running 200 examples for 3 trials.
+2023-04-26 15:25:06,445 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:16,280 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Walmart-Amazon",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:16,303 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Walmart-Amazon
+2023-04-26 15:25:17,765 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:25:17,767 [run_inference] [INFO] Train shape is 6144
+2023-04-26 15:25:17,770 [run_inference] [INFO] Test shape is 2049
+2023-04-26 15:25:17,771 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:25:18,164 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:22,421 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Walmart-Amazon",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:22,429 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Walmart-Amazon
+2023-04-26 15:25:23,647 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:25:23,649 [run_inference] [INFO] Train shape is 6144
+2023-04-26 15:25:23,651 [run_inference] [INFO] Test shape is 2049
+2023-04-26 15:25:23,652 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:25:23,915 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:27,866 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Amazon-Google",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:27,878 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Amazon-Google
+2023-04-26 15:25:29,967 [data_utils] [INFO] Class balanced: train sample per class: 699
+2023-04-26 15:25:29,977 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:25:29,979 [run_inference] [INFO] Train shape is 1398
+2023-04-26 15:25:29,980 [run_inference] [INFO] Test shape is 2293
+2023-04-26 15:25:29,982 [run_inference] [INFO] Running 200 examples for 3 trials.
+2023-04-26 15:25:30,286 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:34,283 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Amazon-Google",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:34,292 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Amazon-Google
+2023-04-26 15:25:36,101 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:25:36,103 [run_inference] [INFO] Train shape is 6874
+2023-04-26 15:25:36,104 [run_inference] [INFO] Test shape is 2293
+2023-04-26 15:25:36,106 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:25:36,390 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:40,669 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Amazon-Google",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:40,680 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/Amazon-Google
+2023-04-26 15:25:42,557 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:25:42,559 [run_inference] [INFO] Train shape is 6874
+2023-04-26 15:25:42,560 [run_inference] [INFO] Test shape is 2293
+2023-04-26 15:25:42,562 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:25:42,825 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:46,788 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-ACM",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:46,798 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-ACM
+2023-04-26 15:25:52,715 [data_utils] [INFO] Class balanced: train sample per class: 1332
+2023-04-26 15:25:52,726 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:25:52,728 [run_inference] [INFO] Train shape is 2664
+2023-04-26 15:25:52,729 [run_inference] [INFO] Test shape is 2473
+2023-04-26 15:25:52,731 [run_inference] [INFO] Running 200 examples for 3 trials.
+2023-04-26 15:25:53,098 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:25:57,502 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-ACM",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:25:57,512 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-ACM
+2023-04-26 15:26:00,121 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:26:00,125 [run_inference] [INFO] Train shape is 7417
+2023-04-26 15:26:00,126 [run_inference] [INFO] Test shape is 2473
+2023-04-26 15:26:00,128 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:26:00,440 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:26:04,695 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-ACM",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:26:04,704 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-ACM
+2023-04-26 15:26:07,280 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:26:07,282 [run_inference] [INFO] Train shape is 7417
+2023-04-26 15:26:07,283 [run_inference] [INFO] Test shape is 2473
+2023-04-26 15:26:07,285 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:26:07,696 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:26:12,188 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-GoogleScholar",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:26:12,197 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-GoogleScholar
+2023-04-26 15:26:19,281 [data_utils] [INFO] Class balanced: train sample per class: 3207
+2023-04-26 15:26:19,301 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:26:19,302 [run_inference] [INFO] Train shape is 6414
+2023-04-26 15:26:19,304 [run_inference] [INFO] Test shape is 5742
+2023-04-26 15:26:19,305 [run_inference] [INFO] Running 200 examples for 3 trials.
+2023-04-26 15:26:19,784 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:26:25,130 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-GoogleScholar",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:26:25,140 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-GoogleScholar
+2023-04-26 15:26:31,354 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:26:31,356 [run_inference] [INFO] Train shape is 17223
+2023-04-26 15:26:31,358 [run_inference] [INFO] Test shape is 5742
+2023-04-26 15:26:31,359 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:26:31,761 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:26:37,913 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-GoogleScholar",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:26:37,930 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/entity_matching/structured/DBLP-GoogleScholar
+2023-04-26 15:26:45,637 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:26:45,639 [run_inference] [INFO] Train shape is 17223
+2023-04-26 15:26:45,640 [run_inference] [INFO] Test shape is 5742
+2023-04-26 15:26:45,642 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:26:46,300 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:26:55,473 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Restaurant",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 5
+}
+2023-04-26 15:26:55,508 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Restaurant
+2023-04-26 15:26:55,695 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:26:55,701 [run_inference] [INFO] Train shape is 622
+2023-04-26 15:26:55,703 [run_inference] [INFO] Test shape is 86
+2023-04-26 15:26:55,704 [run_inference] [INFO] Running 86 examples for 3 trials.
+2023-04-26 15:26:55,927 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:01,281 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Restaurant",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 5
+}
+2023-04-26 15:27:01,291 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Restaurant
+2023-04-26 15:27:01,374 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:01,375 [run_inference] [INFO] Train shape is 622
+2023-04-26 15:27:01,377 [run_inference] [INFO] Test shape is 86
+2023-04-26 15:27:01,380 [run_inference] [INFO] Running 86 examples for 1 trials.
+2023-04-26 15:27:01,734 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:05,786 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Restaurant",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 5
+}
+2023-04-26 15:27:05,795 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Restaurant
+2023-04-26 15:27:05,869 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:05,871 [run_inference] [INFO] Train shape is 622
+2023-04-26 15:27:05,872 [run_inference] [INFO] Test shape is 86
+2023-04-26 15:27:05,874 [run_inference] [INFO] Running 86 examples for 1 trials.
+2023-04-26 15:27:06,052 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:10,384 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-26 15:27:10,397 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-26 15:27:10,448 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:10,450 [run_inference] [INFO] Train shape is 469
+2023-04-26 15:27:10,452 [run_inference] [INFO] Test shape is 65
+2023-04-26 15:27:10,455 [run_inference] [INFO] Running 65 examples for 3 trials.
+2023-04-26 15:27:10,609 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:14,771 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-26 15:27:14,782 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-26 15:27:14,824 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:14,827 [run_inference] [INFO] Train shape is 469
+2023-04-26 15:27:14,829 [run_inference] [INFO] Test shape is 65
+2023-04-26 15:27:14,830 [run_inference] [INFO] Running 65 examples for 1 trials.
+2023-04-26 15:27:15,103 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:19,154 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Buy",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 10
+}
+2023-04-26 15:27:19,164 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/data_imputation/Buy
+2023-04-26 15:27:19,211 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:19,214 [run_inference] [INFO] Train shape is 469
+2023-04-26 15:27:19,216 [run_inference] [INFO] Test shape is 65
+2023-04-26 15:27:19,218 [run_inference] [INFO] Running 65 examples for 1 trials.
+2023-04-26 15:27:19,377 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:23,629 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/error_detection/Hospital",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 10,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": true,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 3,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:27:23,642 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/error_detection/Hospital
+2023-04-26 15:27:24,707 [data_utils] [INFO] Class balanced: train sample per class: 44
+2023-04-26 15:27:24,713 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:24,715 [run_inference] [INFO] Train shape is 88
+2023-04-26 15:27:24,716 [run_inference] [INFO] Test shape is 17101
+2023-04-26 15:27:24,718 [run_inference] [INFO] Running 200 examples for 3 trials.
+2023-04-26 15:27:25,893 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:33,304 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/error_detection/Hospital",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 0,
+    "sample_method": "random",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": true,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:27:33,315 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/error_detection/Hospital
+2023-04-26 15:27:34,508 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:34,510 [run_inference] [INFO] Train shape is 1710
+2023-04-26 15:27:34,512 [run_inference] [INFO] Test shape is 17101
+2023-04-26 15:27:34,514 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:27:35,768 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
+2023-04-26 15:27:40,552 [run_inference] [INFO] {
+    "data_dir": "/Users/ualguest/Downloads/fm_data_tasks/data/datasets/error_detection/Hospital",
+    "output_dir": "outputs",
+    "cache_name": "sqlite",
+    "cache_connection": "fm_data_tasks.sqlite",
+    "client_name": "openaichat",
+    "client_connection": null,
+    "run_tag": "default",
+    "overwrite_cache": false,
+    "k": 1,
+    "sample_method": "manual",
+    "seed": 1234,
+    "class_balanced": false,
+    "sep_tok": ".",
+    "nan_tok": "nan",
+    "num_run": 200,
+    "num_trials": 1,
+    "num_print": 10,
+    "add_task_instruction": false,
+    "task_instruction_idx": 0,
+    "do_test": true,
+    "dry_run": false,
+    "stop_token": "\n",
+    "temperature": 0.0,
+    "max_tokens": 3
+}
+2023-04-26 15:27:40,564 [data_utils] [INFO] Processing /Users/ualguest/Downloads/fm_data_tasks/data/datasets/error_detection/Hospital
+2023-04-26 15:27:41,452 [run_inference] [INFO] Using 0 instruction idx
+2023-04-26 15:27:41,454 [run_inference] [INFO] Train shape is 1710
+2023-04-26 15:27:41,455 [run_inference] [INFO] Test shape is 17101
+2023-04-26 15:27:41,457 [run_inference] [INFO] Running 200 examples for 1 trials.
+2023-04-26 15:27:42,547 [client] [ERROR] {'error': {'message': 'You exceeded your current quota, please check your plan and billing details.', 'type': 'insufficient_quota', 'param': None, 'code': None}}
