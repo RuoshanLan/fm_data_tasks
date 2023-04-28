@@ -225,13 +225,11 @@ def main():
         preds = []
         idx = 0
         for _ in range(min(num_run, args.num_print)):
+            logger.info(f"idx is {idx}")
             if not args.dry_run:
-                if count_idx and (count_idx % 3 == 0): # Sleep after every three runs
-                    sleep(60)
                 pred = manifest_instance.run(
                     prompt(queries[idx]), overwrite_cache=args.overwrite_cache
                 )
-                count_idx += 1
             else:
                 pred = ""
             preds.append(pred)
