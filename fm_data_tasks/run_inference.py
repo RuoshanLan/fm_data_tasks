@@ -225,14 +225,11 @@ def main():
         preds = []
         idx = 0
         for _ in range(min(num_run, args.num_print)):
-            # logger.info(prompt(queries[idx]))
+            logger.info(f"idx is {idx}")
             if not args.dry_run:
-                if count_idx and (count_idx % 3 == 0): # Sleep after every three runs
-                    sleep(60)
                 pred = manifest_instance.run(
                     prompt(queries[idx]), overwrite_cache=args.overwrite_cache
                 )
-                count_idx += 1
             else:
                 pred = ""
             preds.append(pred)
@@ -241,16 +238,14 @@ def main():
         # Send to model for predictions
         if not args.dry_run:
             for query in queries[idx:num_run]:
-                if count_idx and (count_idx % 3 == 0):
-                    sleep(60)
+                logger.info(f"idx is {idx}")
                 preds.append(
                     manifest_instance.run(
                         prompt(query),
                         overwrite_cache=args.overwrite_cache,
                     )
                 )
-                count_idx += 1
-                
+                idx += 1
         else:
             preds.extend([""] * (num_run - idx))
 

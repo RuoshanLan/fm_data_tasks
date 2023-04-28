@@ -9,9 +9,9 @@ poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validat
 
 
 # Entity Matching Beer
-poetry run python3 -m fm_data_tasks.run_inference --num_run 200 --k 10 --sample_method random --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --class_balanced
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --class_balanced
 
-poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validation_clusters --validation_path outputs/Beer/validation/text-davinci-002_10k_1cb_random_91run_0dry/trial_0.feather --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --k 10 --sample_method validation_clusters --validation_path outputs/Beer/validation/text-davinci-002_10k_1cb_random_91run_0dry/trial_0.feather --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --do_test
 
 
 # Entity Matching iTunes-Amazon
