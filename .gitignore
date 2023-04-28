@@ -119,3 +119,9 @@ venv.bak/
 *.tsv
 *.7z
 .DS_Store
+
+# data folder
+data/
+
+# SQL database cache
+fm_data_tasks.sqlite
