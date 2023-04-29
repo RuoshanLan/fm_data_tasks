@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import List
 
 from rich.logging import RichHandler
+logger = logging.getLogger(__name__)
 
 
 def setup_logger(log_dir: str):
@@ -20,16 +21,31 @@ def setup_logger(log_dir: str):
 
 def compute_metrics(preds: List, golds: List, task: str):
     """Compute metrics."""
+    logger.info("compute metrics!!!!!!!!!!!!!!")
     mets = {"tp": 0, "tn": 0, "fp": 0, "fn": 0, "crc": 0, "total": 0}
     for pred, label in zip(preds, golds):
         label = label.strip().lower()
         pred = pred.strip().lower()
         mets["total"] += 1
         if task in {
-            "data_imputation",
+            #"data_imputation",
             # "entity_matching",
         }:
             crc = pred == label
+        elif task in {"data_imputation"}:
+            logger.info("enter data_imputation")
+            logger.info(f"pred is {pred} , label is {label}")
+            if "is" in pred:
+                 startst = pred.split("is")[0]
+                 endst = pred.split("is")[-1]
+                 #logger.info(f"start is {startst}, end is {endst}, label is {label}")
+                 if label in endst or label in startst:
+                     crc = True
+                 else:
+                    crc = False
+            else:
+                crc = pred == label    
+            logger.info(f"crc is {crc}")
         elif task in {"entity_matching", "schema_matching", "error_detection_spelling"}:
             crc = pred.startswith(label)
         elif task in {"error_detection"}:

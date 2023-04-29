@@ -233,18 +233,18 @@ def main():
             else:
                 pred = ""
             preds.append(pred)
-            # logger.info(f"====> {pred} <====")
+            logger.info(f"====> {pred} <====")
             idx += 1
         # Send to model for predictions
         if not args.dry_run:
             for query in queries[idx:num_run]:
                 logger.info(f"idx is {idx}")
-                preds.append(
-                    manifest_instance.run(
-                        prompt(query),
-                        overwrite_cache=args.overwrite_cache,
-                    )
+                pred = manifest_instance.run(
+                    prompt(query),
+                    overwrite_cache=args.overwrite_cache,
                 )
+                logger.info(f"pred is ====> {pred} <====")
+                preds.append(pred)
                 idx += 1
         else:
             preds.extend([""] * (num_run - idx))
