@@ -21,7 +21,6 @@ def setup_logger(log_dir: str):
 
 def compute_metrics(preds: List, golds: List, task: str):
     """Compute metrics."""
-    logger.info("compute metrics!!!!!!!!!!!!!!")
     mets = {"tp": 0, "tn": 0, "fp": 0, "fn": 0, "crc": 0, "total": 0}
     for pred, label in zip(preds, golds):
         label = label.strip().lower()
