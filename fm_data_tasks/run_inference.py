@@ -131,6 +131,12 @@ def parse_args() -> argparse.Namespace:
         "--max_tokens", type=int, help="Max tokens to generate.", default=3
     )
 
+    parser.add_argument(
+        "--validation_path",   
+        type=str,
+        help="Which validation directory to run.",
+    )
+
     args = parser.parse_args()
     return args
 

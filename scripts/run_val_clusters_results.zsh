@@ -11,7 +11,7 @@ poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validat
 # Entity Matching Beer
 poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --class_balanced
 
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --k 10 --sample_method validation_clusters --validation_path outputs/Beer/validation/text-davinci-002_10k_1cb_random_91run_0dry/trial_0.feather --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --k 10 --sample_method validation_clusters --validation_path outputs/Beer/validation/default/10k_0inst_1cb_random_200run_0dry/trial_0.feather --data_dir data/datasets/entity_matching/structured/Beer --nan_tok "" --do_test
 
 
 # Entity Matching iTunes-Amazon
@@ -45,9 +45,9 @@ poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validat
 
 
 # Data Imputation Restaurant
-poetry run python3 -m fm_data_tasks.run_inference --num_run 200 --k 10 --sample_method random --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5
 
-poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validation_clusters --validation_path outputs/Restaurant/validation/text-davinci-002_10k_0cb_random_156run_0dry/trial_0.feather --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5 --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --k 10 --sample_method validation_clusters --validation_path outputs/Restaurant/validation/default/10k_0inst_0cb_random_200run_0dry/trial_0.feather --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5 --do_test
 
 
 # Data Imputation Buy
@@ -57,6 +57,6 @@ poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validat
 
 
 # Error Detection Hopsital
-poetry run python3 -m fm_data_tasks.run_inference --num_run 200 --k 10 --sample_method random  --data_dir data/datasets/error_detection/Hospital --class_balanced
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random  --data_dir data/datasets/error_detection/Hospital --class_balanced
 
-poetry run python3 -m fm_data_tasks.run_inference --k 10 --sample_method validation_clusters --validation_path outputs/Hopsital/validation/text-davinci-002_10k_1cb_random_189run_0dry/trial_0.feather --data_dir data/datasets/error_detection/Hospital --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --k 10 --sample_method validation_clusters --validation_path outputs/Hopsital/validation/default/10k_0inst_0cb_random_200run_0dry/trial_0.feather --data_dir data/datasets/error_detection/Hospital --do_test
