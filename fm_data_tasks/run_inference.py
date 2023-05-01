@@ -11,6 +11,7 @@ import fm_data_tasks.utils.data_utils as data_utils
 import fm_data_tasks.utils.prompt_utils as prompt_utils
 from fm_data_tasks.utils import constants
 from fm_data_tasks.utils.utils import compute_metrics, setup_logger
+from time import sleep
 
 logger = logging.getLogger(__name__)
 
@@ -130,6 +131,12 @@ def parse_args() -> argparse.Namespace:
         "--max_tokens", type=int, help="Max tokens to generate.", default=3
     )
 
+    parser.add_argument(
+        "--validation_path",   
+        type=str,
+        help="Which validation directory to run.",
+    )
+
     args = parser.parse_args()
     return args
 
@@ -162,6 +169,7 @@ def main():
     if test_file not in pd_data_files:
         raise ValueError(f"Need {test_file} data")
 
+    count_idx = 0 # Used for keeping track of rate limit
     train_data = pd_data_files["train"]
     test_data = pd_data_files[test_file]
     task = constants.DATA2TASK[args.data_dir]
@@ -222,8 +230,8 @@ def main():
         gt = test_data["label_str"]
         preds = []
         idx = 0
-        # Run a few for printing -- they are cached
         for _ in range(min(num_run, args.num_print)):
+            logger.info(f"idx is {idx}")
             if not args.dry_run:
                 pred = manifest_instance.run(
                     prompt(queries[idx]), overwrite_cache=args.overwrite_cache
@@ -231,19 +239,18 @@ def main():
             else:
                 pred = ""
             preds.append(pred)
-            # logger.info(f"====> {pred} <====")
+            logger.info(f"====> {pred} <====")
             idx += 1
-
         # Send to model for predictions
         if not args.dry_run:
             for query in queries[idx:num_run]:
                 logger.info(f"idx is {idx}")
-                preds.append(
-                    manifest_instance.run(
-                        prompt(query),
-                        overwrite_cache=args.overwrite_cache,
-                    )
+                pred = manifest_instance.run(
+                    prompt(query),
+                    overwrite_cache=args.overwrite_cache,
                 )
+                logger.info(f"pred is ====> {pred} <====")
+                preds.append(pred)
                 idx += 1
         else:
             preds.extend([""] * (num_run - idx))
@@ -292,6 +299,7 @@ def main():
 
     logger.info(f"Final Metrics {json.dumps(trial_metrics, indent=4)}")
     logger.info(f"Metrics dumped to {output_metrics}")
+    sleep(60) # If running a bash script, sleep before next command
 
 
 if __name__ == "__main__":
