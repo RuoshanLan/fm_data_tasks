@@ -31,21 +31,24 @@ def main():
     else:
         val = 1
 
-    print(val)
 
     path = "../{}/{}/default/{}k_{}inst_{}cb_{}_{}run_0dry/trial_{}.feather".format(
         args['filename'], ("validation" if args['valid'] else "test"), args['k'],(1 if not args['k'] else 0) , val,
         ("manual" if args['k'] == 1 else "random"), args['n'], args['trial_no']
     )
     data = pd.read_feather(path)
-    print(data.head(20))
+    # print(data.head(20))
     pd.set_option('display.max_colwidth', None)
     pd.set_option('display.width', None)
     pd.set_option('display.max_rows', None)
+    if "Buy" in path or "Restaurant" in path:
+        data["preds"] = data["preds"].str.split(" is ").str[-1].str[:-1] # Split on " is "
+        data["text"] = data["text"].str.split(".").str[0]
+        data["text"] = data["text"].where(data["text"].str.len() < 100, data["text"].str.slice(0, 100))
+    else:
+        data["preds"] = data["preds"].str.split("[,.]", regex=True).str[0]
+        data["text"] = data["text"].where(data["text"].str.len() < 180, data["text"].str.slice(0, 180))
     data_part = data[data["label_str"].str.strip().str.lower() != data["preds"].str.strip().str.lower()][["text", "label_str", "preds"]]
-    if "Buy" in path:
-        data_part["text"] = data_part["text"].str.split(".").str[0]
-        data_part["text"] = data_part["text"].where(data_part["text"].str.len() < 100, data_part["text"].str.slice(0, 100))
     print(list(data_part.columns))
     print(data_part)
 
