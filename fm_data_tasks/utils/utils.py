@@ -21,6 +21,7 @@ def setup_logger(log_dir: str):
 
 def compute_metrics(preds: List, golds: List, task: str):
     """Compute metrics."""
+    logger.info(f"start computing metrics! {task}")
     mets = {"tp": 0, "tn": 0, "fp": 0, "fn": 0, "crc": 0, "total": 0}
     for pred, label in zip(preds, golds):
         label = label.strip().lower()
@@ -32,8 +33,6 @@ def compute_metrics(preds: List, golds: List, task: str):
         }:
             crc = pred == label
         elif task in {"data_imputation"}:
-            logger.info("enter data_imputation")
-            logger.info(f"pred is {pred} , label is {label}")
             if "is" in pred:
                  startst = pred.split("is")[0]
                  endst = pred.split("is")[-1]
@@ -46,11 +45,15 @@ def compute_metrics(preds: List, golds: List, task: str):
                 crc = pred == label    
             logger.info(f"crc is {crc}")
         elif task in {"entity_matching", "schema_matching", "error_detection_spelling"}:
+            logger.info("enter error_detection_spelling")
+            logger.info(f"pred is {pred} , label is {label}")
             crc = pred.startswith(label)
-        elif task in {"error_detection"}:
+            logger.info(f"crc is {crc}")
+        elif task in {"error_detection"}: 
             pred = pred.split("\n\n")[-1]
             breakpoint()
             crc = pred.endswith(label)
+           
         else:
             raise ValueError(f"Unknown task: {task}")
         # Measure equal accuracy for generation
@@ -59,14 +62,24 @@ def compute_metrics(preds: List, golds: List, task: str):
         if label == "yes":
             if crc:
                 mets["tp"] += 1
+                logger.info("tp + 1")
             else:
                 mets["fn"] += 1
+                logger.info("fn + 1")
         elif label == "no":
             if crc:
                 mets["tn"] += 1
+                logger.info("tn + 1")
             else:
                 mets["fp"] += 1
+                logger.info("fp + 1")
 
+    logger.info(mets["tp"])
+    logger.info(mets["fp"])
+    logger.info(mets["tn"])
+    logger.info(mets["fn"])
+
+              
     prec = mets["tp"] / max(1, (mets["tp"] + mets["fp"]))
     rec = mets["tp"] / max(1, (mets["tp"] + mets["fn"]))
     acc = mets["crc"] / mets["total"]
