@@ -13,15 +13,15 @@ Contact: Avanika Narayan ([avanikan@stanford.edu](mailto:avanikan@stanford.edu))
 # Install
 Download the code:
 ```
-git clone git@github.com:HazyResearch/fm_data_tasks.git
+git clone git@github.com:RuoshanLan/fm_data_tasks.git
 cd fm_data_tasks
+git submodule update --init --recursive
 ```
 
 Install:
 ```
 pip install poetry
 poetry install
-poetry run pre-commit install
 ```
 or
 ```
