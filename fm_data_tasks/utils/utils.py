@@ -33,7 +33,7 @@ def compute_metrics(preds: List, golds: List, task: str):
         }:
             crc = pred == label
         elif task in {"data_imputation"}:
-            if "is" in pred:
+            if " is " in pred:
                  startst = pred.split("is")[0]
                  endst = pred.split("is")[-1]
                  #logger.info(f"start is {startst}, end is {endst}, label is {label}")

@@ -60,19 +60,19 @@ poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num
 
 
 # Data Imputation Restaurant
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --num_trials 3 --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5 --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --num_trials 3 --data_dir data/datasets/data_imputation/Restaurant --max_tokens 30 --do_test
 
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 0 --sample_method random --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5 --do_test --add_task_instruction
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 0 --sample_method random --data_dir data/datasets/data_imputation/Restaurant --max_tokens 30 --do_test --add_task_instruction
 
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --sample_method manual --data_dir data/datasets/data_imputation/Restaurant --max_tokens 5 --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --sample_method manual --data_dir data/datasets/data_imputation/Restaurant --max_tokens 15 --do_test
 
 
 # Data Imputation Buy
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --num_trials 3 --data_dir data/datasets/data_imputation/Buy --max_tokens 10 --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 10 --sample_method random --num_trials 3 --data_dir data/datasets/data_imputation/Buy --max_tokens 30 --do_test
 
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 0 --sample_method random --data_dir data/datasets/data_imputation/Buy --max_tokens 10 --do_test --add_task_instruction
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --k 0 --sample_method random --data_dir data/datasets/data_imputation/Buy --max_tokens 30 --do_test --add_task_instruction
 
-poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --sample_method manual --data_dir data/datasets/data_imputation/Buy --max_tokens 10 --do_test
+poetry run python3 -m fm_data_tasks.run_inference --client_name openaichat --num_run 200 --sample_method manual --data_dir data/datasets/data_imputation/Buy --max_tokens 30 --do_test
 
 
 # Error Detection Hopsital
